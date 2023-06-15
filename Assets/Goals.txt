@@ -1,0 +1,16 @@
+What we have:
+
+- Server currently relays all messages sent by one user, to all other users on the client list, ammended with an index for who it came from.
+- Server does no thinking beforehand, nor does it analyze anything at all really.
+- Clients currently send their normalized input vector2 to the server as a string.
+
+What we still lack:
+
+- Weird bug with inputs being wrong, probably as a result of running several clients on one instance of unity (not even a seperate program, let alone computer!)
+- The inputs do not yet map on to control other players.
+- We need to get a build and test it on several windows machines, then potentially switch over to Linux as well.
+- Eventually work on making the Server script into a "Host" script, so that we reduce the amount of network stuff happening
+	(ie, instead of running both a client script and a server script on the machine, you just run a host script, which sends out
+	all your data to everyone, and relays all the data, but it doesn't force you to send data across the network back
+	to yourself!)
+- Work on a menu screen for navigating the network stuff (creating rooms, choosing to host, joining, disconnecting, etc.)
