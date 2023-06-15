@@ -11,7 +11,7 @@ public class PlayerInputScript : MonoBehaviour
     private float vertical;
 
 
-    [SerializeField] private TextMeshProUGUI playerInputDisplay;
+    //[SerializeField] private TextMeshProUGUI playerInputDisplay;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +21,6 @@ public class PlayerInputScript : MonoBehaviour
 
         move = new Vector2(horizontal, vertical).normalized;
 
-        playerInputDisplay.text = "Your Inputs: " + move.ToString();
+        //playerInputDisplay.text = "Your Inputs: " + move.ToString();
     }
 }
